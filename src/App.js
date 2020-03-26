@@ -26,11 +26,16 @@ const styles = {
 
 
 function App() {
+
+let btnHandler = e => {
+  console.log('test')
+}
+
   return (
     <div className="App">
     <div style={styles.container}>
       <p style={styles.text}>Redux Examples</p>
-      <div style={styles.button}>
+      <div onClick={btnHandler} style={styles.button}>
         <p style={styles.buttonText}>Load Data</p>
       </div>
     </div>
