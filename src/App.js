@@ -24,21 +24,20 @@ const styles = {
   }
 }
 
-
 function App() {
 
-let btnHandler = e => {
-  console.log('test')
-}
+  let btnHandler = e => {
+    console.log('test')
+  }
 
   return (
     <div className="App">
-    <div style={styles.container}>
-      <p style={styles.text}>Redux Examples</p>
-      <div onClick={btnHandler} style={styles.button}>
-        <p style={styles.buttonText}>Load Data</p>
+      <div style={styles.container}>
+        <p style={styles.text}>Redux Examples</p>
+        <div onClick={btnHandler} style={styles.button}>
+          <p style={styles.buttonText}>Load Data</p>
+        </div>
       </div>
-    </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
@@ -46,13 +45,13 @@ let btnHandler = e => {
   );
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
   return {
     appData: state.appData
   }
 }
 
-function mapDispatchToProps (dispatch) {
+function mapDispatchToProps(dispatch) {
   return {
     fetchData: () => dispatch(fetchData())
   }
