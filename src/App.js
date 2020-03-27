@@ -24,16 +24,32 @@ const styles = {
   }
 }
 
-function App() {
+function App(props) {
 
   let btnHandler = e => {
-    console.log('test')
+    console.log('htnkHandler');
+    props.fetchData();
   }
 
   return (
     <div className="App">
       <div style={styles.container}>
         <p style={styles.text}>Redux Examples</p>
+        <div>
+        {
+          props.appData.isFetching && <strong>Loading</strong>
+        }
+        {
+          props.appData.data.length ? (
+            props.appData.data.map((person, i) => {
+              return <div key={i} >
+                <div>Name: {person.name}</div>
+                <div>Age: {person.age}</div>
+              </div>
+            })
+          ) : null
+        }
+        </div>
         <div onClick={btnHandler} style={styles.button}>
           <p style={styles.buttonText}>Load Data</p>
         </div>
