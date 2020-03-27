@@ -27,7 +27,7 @@ const styles = {
 function App(props) {
 
   let btnHandler = e => {
-    console.log('htnkHandler');
+    console.log('btnkHandler');
     props.fetchData();
   }
 
