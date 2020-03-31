@@ -7,3 +7,5 @@
 - https://redux-observable.js.org/docs/basics/SettingUpTheMiddleware.html
 - https://stackoverflow.com/questions/52586826/typeerror-action-oftype-mergemap-is-not-a-function
 - https://redux-observable.js.org/docs/basics/Epics.html
+- https://www.learnrxjs.io/learn-rxjs/operators/transformation/mergemap
+- https://www.youtube.com/watch?v=eUMbH6X_Adc
