@@ -7,7 +7,8 @@ const people = [
 export default () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      return resolve(people)
+      // return resolve(people)
+      return reject('reject')
     }, 3000)
   })
 }
