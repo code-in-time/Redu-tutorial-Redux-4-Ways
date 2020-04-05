@@ -9,3 +9,4 @@
 - https://redux-observable.js.org/docs/basics/Epics.html
 - https://www.learnrxjs.io/learn-rxjs/operators/transformation/mergemap
 - https://www.youtube.com/watch?v=eUMbH6X_Adc
+- https://stackoverflow.com/questions/60983990/typeerror-object-flatmap-is-not-a-function/60984558
